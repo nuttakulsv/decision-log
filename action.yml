@@ -1,0 +1,27 @@
+name: decision-log
+description: Comment on pull requests with the architecture decisions (ADRs) that cover the changed files
+author: nuttakulsv
+branding:
+  icon: book-open
+  color: green
+inputs:
+  github-token:
+    description: Token used to read the pull request files and post the comment
+    default: ${{ github.token }}
+  dir:
+    description: Folder with the decision files. Defaults to decision-log.json, .adr-dir, or docs/decisions
+    default: ''
+  lang:
+    description: Comment language, en or th. Defaults to the lang in decision-log.json
+    default: ''
+  fail-on-deprecated:
+    description: Fail when the PR changes files covered by a superseded or deprecated decision without mentioning the current one
+    default: 'false'
+outputs:
+  decisions:
+    description: JSON array of matched decision numbers
+  count:
+    description: Number of matched decisions
+runs:
+  using: node24
+  main: action/index.cjs

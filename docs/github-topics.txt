@@ -1,0 +1,21 @@
+Description:
+Architecture decision records (ADRs) that show up in the pull requests they govern. CLI, linter, static site and GitHub Action. adr-tools and MADR compatible, English and Thai templates.
+
+Topics:
+adr
+architecture-decision-records
+architecture
+decision-log
+madr
+adr-tools
+github-action
+pull-request
+code-review
+documentation
+software-architecture
+tech-lead
+engineering-management
+cli
+static-site
+typescript
+thai

@@ -1,0 +1,7 @@
+dist
+action/index.cjs
+coverage
+package-lock.json
+examples/**/*.md
+docs/decisions/*.md
+test/fixtures
